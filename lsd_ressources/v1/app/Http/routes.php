@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return view('Welcome');
+	return View::make('hello');
 });
 
 
