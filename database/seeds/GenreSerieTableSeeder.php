@@ -1,16 +1,23 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use \GenreSerie;
+use App\Api\v1\GenreSerie;
 
 class GenreSerieTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('genre_serie')->delete();
+		DB::table('genre_serie')->delete();
+		$json = File::get("database/data/genresSerie.json");
+        $data = json_decode($json);
+        foreach ($data as $obj) {
 
 		// GenreSeriePivotTableSeeder
 		GenreSerie::create(array(
+			'id' => $obj->GenreSerieID,
+            'genre_id' => $obj->GenreID,
+            'serie_id' => $obj->SerieID
 			));
+								}
 	}
 }
