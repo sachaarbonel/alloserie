@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+
+class CreateActeursTable extends Migration {
+
+    public function up()
+    {
+        Schema::create('acteurs', function(Blueprint $table) {
+            $table->increments('id');
+            $table->integer('saison_id')->unsigned();
+            $table->string('nom');
+            $table->string('role');
+            $table->string('photoURL');
+            
+        });
+
+        Schema::enableForeignKeyConstraints();
+           Schema::table('acteurs', function(Blueprint $table) {
+            $table->foreign('saison_id')->references('id')->on('saisons');
+         });
+    }
+
+    public function down()
+    {
+            Schema::table('acteurs', function(Blueprint $table) {
+            $table->dropForeign('acteurs_saison_id_foreign');
+        });
+        Schema::drop('acteurs');
+    }
+}

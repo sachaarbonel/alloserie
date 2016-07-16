@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\v1;
+namespace App\Api\V1;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class Photo extends Model {
 
 	public function saison()
 	{
-		return $this->belongsTo('App\Saison');
+		return $this->belongsTo('App\Api\V1\Saison');
 	}
 
 }

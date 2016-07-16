@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\v1\Teaser;
+use App\Api\V1\Teaser;
+use DB;
 
 class TeaserTableSeeder extends Seeder {
 
@@ -10,6 +11,8 @@ class TeaserTableSeeder extends Seeder {
 		DB::table('teasers')->delete();
 		$json = File::get("database/data/teasers.json");
         $data = json_decode($json);
+        if (is_array($data) || is_object($data))
+	{
         foreach ($data as $obj) {
 
 		// TeaserTableSeeder
@@ -21,4 +24,5 @@ class TeaserTableSeeder extends Seeder {
 			));
 								}
 	}
+}
 }

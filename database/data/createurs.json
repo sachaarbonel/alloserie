@@ -1,7 +1,13 @@
 [
 {
-"CreateurID":,
-"NomCreateur":"",
-"PhotoCreateur":""
+"CreateurID":1,
+"NomCreateur":"Morgane Freeman",
+"PhotoCreateur":"http://www.google.com/image"
+},
+{
+"CreateurID":2,
+"NomCreateur":"Moi",
+"PhotoCreateur":"http://www.google.com/image"
 }
+
 ]

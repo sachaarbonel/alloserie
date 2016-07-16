@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\v1\CreateurSerie;
+use App\Api\V1\CreateurSerie;
 
 class CreateurSerieTableSeeder extends Seeder {
 
@@ -10,6 +10,8 @@ class CreateurSerieTableSeeder extends Seeder {
 		DB::table('createur_serie')->delete();
 		$json = File::get("database/data/createursSerie.json");
         $data = json_decode($json);
+        if (is_array($data) || is_object($data))
+	{
         foreach ($data as $obj) {
 
 		// CreateurSeriePivotTableSeeder
@@ -20,4 +22,5 @@ class CreateurSerieTableSeeder extends Seeder {
 			));
 								}
 	}
+}
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\v1;
+namespace App\Api\V1;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,12 +11,12 @@ class Episode extends Model {
 
 	public function saison()
 	{
-		return $this->belongsTo('App\Saison');
+		return $this->belongsTo('App\Api\V1\Saison');
 	}
 
 	public function teaser()
 	{
-		return $this->morphOne('App\Teaser', 'teaserable');
+		return $this->morphOne('App\Api\V1\Teaser', 'teaserable');
 	}
 
 }

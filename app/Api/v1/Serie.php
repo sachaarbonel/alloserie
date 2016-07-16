@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\v1;
+namespace App\Api\V1;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,42 +11,42 @@ class Serie extends Model {
 
 	public function saisons()
 	{
-		return $this->hasMany('App\Saison');
+		return $this->hasMany('App\Api\V1\Saison');
 	}
 
 	public function createurs()
 	{
-		return $this->hasMany('App\Createur');
+		return $this->hasMany('App\Api\V1\Createur');
 	}
 
 	public function genres()
 	{
-		return $this->hasMany('App\Genre');
+		return $this->hasMany('App\Api\V1\Genre');
 	}
 
 	public function productions()
 	{
-		return $this->hasMany('App\Production');
+		return $this->hasMany('App\Api\V1\Production');
 	}
 
 	public function photos()
 	{
-		return $this->hasManyThrough('App\Photo', 'App\Saison', 'serie_id', 'saison_id');
+		return $this->hasManyThrough('App\Api\V1\Photo', 'App\Api\V1\Saison', 'serie_id', 'saison_id');
 	}
 
 	public function teaser()
 	{
-		return $this->morphOne('App\Teaser', 'teaserable');
+		return $this->morphOne('App\Api\V1\Teaser', 'teaserable');
 	}
 
 	public function acteurs()
 	{
-		return $this->hasManyThrough('App\Acteur', 'App\Saison', 'serie_id', 'saison_id');
+		return $this->hasManyThrough('App\Api\V1\Acteur', 'App\Api\V1\Saison', 'serie_id', 'saison_id');
 	}
 
 	public function episodes()
 	{
-		return $this->hasManyThrough('App\Episode', 'App\Saison', 'serie_id', 'saison_id');
+		return $this->hasManyThrough('App\Api\V1\Episode', 'App\Api\V1\Saison', 'serie_id', 'saison_id');
 	}
 
 }

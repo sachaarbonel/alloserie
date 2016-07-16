@@ -1,7 +1,12 @@
 [
 {
-"GenreSerieID":,
-"GenreID":,
-"SerieID":
+"GenreSerieID":1,
+"GenreID":2,
+"SerieID":1
+},
+{
+"GenreSerieID":2,
+"GenreID":3,
+"SerieID":2
 }
 ]

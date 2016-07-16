@@ -15,6 +15,10 @@ class DatabaseSeeder extends Seeder {
 		$this->call('SaisonTableSeeder');
 		$this->command->info('Saison table seeded!');
 
+		$this->call('EpisodeTableSeeder');
+		$this->command->info('Episode table seeded!');
+
+
 		$this->call('PhotoTableSeeder');
 		$this->command->info('Photo table seeded!');
 
@@ -24,9 +28,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('CreateurTableSeeder');
 		$this->command->info('Createur table seeded!');
 
-		$this->call('EpisodeTableSeeder');
-		$this->command->info('Episode table seeded!');
-
+	
 		$this->call('GenreTableSeeder');
 		$this->command->info('Genre table seeded!');
 
@@ -44,5 +46,7 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('TeaserTableSeeder');
 		$this->command->info('Teaser table seeded!');
+
+		Model::reguard();
 	}
 }

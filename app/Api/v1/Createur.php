@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\v1;
+namespace App\Api\V1;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class Createur extends Model {
 
 	public function series()
 	{
-		return $this->belongsToMany('App\Serie');
+		return $this->belongsToMany('App\Api\V1\Serie');
 	}
 
 }

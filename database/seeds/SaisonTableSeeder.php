@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\v1\Saison;
+use App\Api\V1\Saison;
 
 class SaisonTableSeeder extends Seeder {
 
@@ -10,7 +10,10 @@ class SaisonTableSeeder extends Seeder {
 		DB::table('saisons')->delete();
 		$json = File::get("database/data/saisons.json");
         $data = json_decode($json);
+        if (is_array($data) || is_object($data))
+	{
         foreach ($data as $obj) {
+
 
 		// SaisonTableSeeder
 		Saison::create(array(
@@ -21,4 +24,5 @@ class SaisonTableSeeder extends Seeder {
 			));
 								}
 	}
+}
 }
