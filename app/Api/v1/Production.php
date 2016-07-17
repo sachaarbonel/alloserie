@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Production extends Model {
 
 	protected $table = 'productions';
+	protected $fillable =['id','imageURL'];
 	public $timestamps = false;
 
 	public function series()

@@ -1,13 +1,12 @@
 [
 {
-"CreateurID":1,
-"NomCreateur":"Morgane Freeman",
-"PhotoCreateur":"http://www.google.com/image"
+"id":1,
+"nom":"Morgane Freeman",
+"photoURL":"http://www.google.com/image"
 },
 {
-"CreateurID":2,
-"NomCreateur":"Moi",
-"PhotoCreateur":"http://www.google.com/image"
+"id":2,
+"nom":"Moi",
+"photoURL":"http://www.google.com/image"
 }
-
 ]

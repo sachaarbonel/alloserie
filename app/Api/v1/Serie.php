@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Serie extends Model {
 
 	protected $table = 'series';
+	protected $fillable =['id','note_presse','note_spectateurs','nombre_fan','nationalite','statut','format','synopsis','miniatureURL','nom','posterURL'];
 	public $timestamps = false;
 
 	public function saisons()

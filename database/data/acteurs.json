@@ -1,16 +1,16 @@
 [
 {
-"ActeurID":1,
-"SaisonID":1,
-"NomActeur":"Brad Pitt",
-"RoleActeur":"Mr Smith",
-"PhotoActeur":"http://www.google.com/image"
+"id":1,
+"saison_id":1,
+"nom":"Brad Pitt",
+"role":"Mr Smith",
+"photoURL":"http://www.google.com/image"
 },
 {
-"ActeurID":2,
-"SaisonID":2,
-"NomActeur":"Angelina Jolie",
-"RoleActeur":"Ms Smith",
-"PhotoActeur":"http://www.google.com/image"
+"id":2,
+"saison_id":2,
+"nom":"Angelina Jolie",
+"role":"Ms Smith",
+"photoURL":"http://www.google.com/image"
 }
 ]

@@ -1,0 +1,16 @@
+[
+{
+"SaisonID":1,
+"EpisodeID":1,
+"EpisodeSynopsis":"Il etait une fois blabla",
+"NomEpisode":"Seigneur Des anneaux Tome 1 episode 1",
+"NumeroEpisode":1,
+},
+{
+"SaisonID":2,
+"EpisodeID":1,
+"EpisodeSynopsis":"Il etait une fois blabla 2",
+"NomEpisode":"Seigneur Des anneaux Tome 2 episode 1",
+"NumeroEpisode":2,
+}
+]

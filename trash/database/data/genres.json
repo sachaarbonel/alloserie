@@ -1,0 +1,14 @@
+[
+{
+"GenreID":1,
+"nomGenre":"Fantastique"
+},
+{
+"GenreID":2,
+"nomGenre":"Policier"
+},
+{
+"GenreID":3,
+"nomGenre":"Romance"
+}
+]

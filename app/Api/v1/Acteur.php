@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Acteur extends Model {
 
 	protected $table = 'acteurs';
+	protected $fillable =['id','saison_id','nom','nom','role','photoURL'];
 	public $timestamps = false;
 
 	public function saisons()

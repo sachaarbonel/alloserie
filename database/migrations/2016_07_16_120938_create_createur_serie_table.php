@@ -18,7 +18,7 @@ class CreateCreateurSerieTable extends Migration
             $table->integer('serie_id')->unsigned();
         });
 
-        Schema::enableForeignKeyConstraints();
+       
         Schema::table('createur_serie', function (Blueprint $table) {
             $table->foreign('createur_id')->references('id')->on('createurs')
                         ->onDelete('cascade')
@@ -27,6 +27,7 @@ class CreateCreateurSerieTable extends Migration
                         ->onDelete('cascade')
                         ->onUpdate('restrict');
         });
+         Schema::enableForeignKeyConstraints();
     }
 
     /**

@@ -16,10 +16,11 @@ class CreateActeursTable extends Migration {
             
         });
 
-        Schema::enableForeignKeyConstraints();
+           
            Schema::table('acteurs', function(Blueprint $table) {
             $table->foreign('saison_id')->references('id')->on('saisons');
          });
+           Schema::enableForeignKeyConstraints();
     }
 
     public function down()

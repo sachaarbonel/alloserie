@@ -1,12 +1,12 @@
 [
 {
-"PhotoID":1,
-"imageURL":"lien vers la photo du seigneur des anneaux Tome 1",
-"SaisonID":1
+"id":1,
+"saison_id":1,
+"imageURL":"test"
 },
 {
-"PhotoID":2,
-"imageURL":"lien vers la photo du seigneur des anneaux Tome 2",
-"SaisonID":2
+"id":2,
+"saison_id":2,
+"imageURL":"test"
 }
 ]

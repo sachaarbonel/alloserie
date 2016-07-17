@@ -13,13 +13,13 @@ class CreatePhotosTable extends Migration {
             $table->string('imageURL');
         });
 
-        Schema::enableForeignKeyConstraints();
+       
 
         Schema::table('photos', function(Blueprint $table) {
-            $table->foreign('saison_id')->references('id')->on('saisons')
-                        ->onDelete('cascade')
-                        ->onUpdate('restrict');
+            $table->foreign('saison_id')->references('id')->on('saisons');
          });
+
+         Schema::enableForeignKeyConstraints();
     }
 
     public function down()

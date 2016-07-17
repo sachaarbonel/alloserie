@@ -13,7 +13,7 @@ class CreateSaisonsTable extends Migration {
             $table->integer('serie_id')->unsigned();
             $table->integer('numero');
         });
-        Schema::enableForeignKeyConstraints();
+      
 
          Schema::table('saisons', function(Blueprint $table) {
          $table->foreign('serie_id')->references('id')->on('series')
@@ -21,6 +21,7 @@ class CreateSaisonsTable extends Migration {
                         ->onUpdate('restrict');
 
          });
+           Schema::enableForeignKeyConstraints();
     }
 
     public function down()

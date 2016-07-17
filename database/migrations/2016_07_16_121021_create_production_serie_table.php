@@ -18,11 +18,12 @@ class CreateProductionSerieTable extends Migration
             $table->integer('serie_id')->unsigned();
         });
 
-        Schema::enableForeignKeyConstraints();
+        
        Schema::table('production_serie', function(Blueprint $table) {
             $table->foreign('production_id')->references('id')->on('productions');
             $table->foreign('serie_id')->references('id')->on('series');
         });
+       Schema::enableForeignKeyConstraints();
     }
 
     /**

@@ -1,10 +1,10 @@
 [
 {
-"ProductionID":1,
-"imageProduction":"lien vers HBO"
+"id":1,
+"imageURL":"lien vers HBO"
 },
 {
-"ProductionID":2,
-"imageProduction":"lien vers OCS"
+"id":2,
+"imageURL":"lien vers OCS"
 }
 ]

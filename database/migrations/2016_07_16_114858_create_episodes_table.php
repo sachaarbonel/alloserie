@@ -14,10 +14,11 @@ class CreateEpisodesTable extends Migration {
             $table->string('nom');
             $table->string('numero');
         });
-        Schema::enableForeignKeyConstraints();
+       
          Schema::table('episodes', function(Blueprint $table) {
             $table->foreign('saison_id')->references('id')->on('saisons');
         });
+          Schema::enableForeignKeyConstraints();
     }
 
     public function down()

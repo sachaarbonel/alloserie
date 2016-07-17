@@ -18,7 +18,7 @@ class CreateGenreSerieTable extends Migration
             $table->integer('serie_id')->unsigned();
         });
 
-        Schema::enableForeignKeyConstraints();
+      
        Schema::table('genre_serie', function(Blueprint $table) {
             $table->foreign('serie_id')->references('id')->on('series')
                         ->onDelete('cascade')
@@ -27,6 +27,7 @@ class CreateGenreSerieTable extends Migration
                         ->onDelete('cascade')
                         ->onUpdate('restrict');
         });
+        Schema::enableForeignKeyConstraints();
     }
 
     /**
