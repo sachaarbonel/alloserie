@@ -9,7 +9,7 @@ class CreatePhotosTable extends Migration {
     {
         Schema::create('photos', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('saison_id')->unsigned();
+            $table->integer('saison_id')->unsigned()->index();
             $table->string('imageURL');
         });
 

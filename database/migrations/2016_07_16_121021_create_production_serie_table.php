@@ -14,8 +14,8 @@ class CreateProductionSerieTable extends Migration
     {
       Schema::create('production_serie', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('production_id')->unsigned();
-            $table->integer('serie_id')->unsigned();
+            $table->integer('production_id')->unsigned()->index();
+            $table->integer('serie_id')->unsigned()->index();
         });
 
         

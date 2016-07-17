@@ -9,7 +9,7 @@ class CreateActeursTable extends Migration {
     {
         Schema::create('acteurs', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('saison_id')->unsigned();
+            $table->integer('saison_id')->unsigned()->index();
             $table->string('nom');
             $table->string('role');
             $table->string('photoURL');

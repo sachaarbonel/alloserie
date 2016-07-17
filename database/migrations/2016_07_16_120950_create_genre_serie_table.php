@@ -14,8 +14,8 @@ class CreateGenreSerieTable extends Migration
     {
       Schema::create('genre_serie', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('genre_id')->unsigned();
-            $table->integer('serie_id')->unsigned();
+            $table->integer('genre_id')->unsigned()->index();
+            $table->integer('serie_id')->unsigned()->index();
         });
 
       

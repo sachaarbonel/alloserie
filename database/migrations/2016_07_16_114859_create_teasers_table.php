@@ -9,7 +9,7 @@ class CreateTeasersTable extends Migration {
     {
         Schema::create('teasers', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('teaserable_id')->unsigned();
+            $table->integer('teaserable_id')->unsigned()->index();
             $table->string('teaserable_type');
             $table->string('videoURL');
         });

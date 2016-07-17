@@ -9,7 +9,7 @@ class CreateEpisodesTable extends Migration {
     {
         Schema::create('episodes', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('saison_id')->unsigned();
+            $table->integer('saison_id')->unsigned()->index();
             $table->string('synopsis');
             $table->string('nom');
             $table->string('numero');

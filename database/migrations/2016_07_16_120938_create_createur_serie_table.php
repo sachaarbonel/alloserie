@@ -14,8 +14,8 @@ class CreateCreateurSerieTable extends Migration
     {
         Schema::create('createur_serie', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('createur_id')->unsigned();
-            $table->integer('serie_id')->unsigned();
+            $table->integer('createur_id')->unsigned()->index();
+            $table->integer('serie_id')->unsigned()->index();
         });
 
        

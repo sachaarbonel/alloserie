@@ -10,16 +10,13 @@ class CreateSaisonsTable extends Migration {
         Schema::create('saisons', function(Blueprint $table) {
             $table->increments('id');
             $table->float('note_spectateurs');
-            $table->integer('serie_id')->unsigned();
+            $table->integer('serie_id')->unsigned()->index();
             $table->integer('numero');
         });
       
 
          Schema::table('saisons', function(Blueprint $table) {
-         $table->foreign('serie_id')->references('id')->on('series')
-                        ->onDelete('restrict')
-                        ->onUpdate('restrict');
-
+         $table->foreign('serie_id')->references('id')->on('series');
          });
            Schema::enableForeignKeyConstraints();
     }
