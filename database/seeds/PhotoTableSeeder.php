@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\V1\Photo;
+use App\Api\V1\Models\Photo;
 
 class PhotoTableSeeder extends Seeder {
 

@@ -11,7 +11,6 @@ class CreateEpisodesTable extends Migration {
             $table->increments('id');
             $table->integer('saison_id')->unsigned()->index();
             $table->string('synopsis');
-            $table->string('nom');
             $table->string('numero');
         });
        

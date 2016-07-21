@@ -9,7 +9,7 @@ class CreateProductionsTable extends Migration {
     {
         Schema::create('productions', function(Blueprint $table) {
             $table->increments('id');
-            $table->string('imageURL');
+            $table->string('production');
         });
     }
 

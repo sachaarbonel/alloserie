@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\V1\GenreSerie;
+use App\Api\V1\Models\GenreSerie;
 
 class GenreSerieTableSeeder extends Seeder {
 

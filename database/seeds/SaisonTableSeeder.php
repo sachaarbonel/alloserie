@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\V1\Saison;
+use App\Api\V1\Models\Saison;
 
 class SaisonTableSeeder extends Seeder {
 

@@ -1,16 +1,12 @@
 [
 {
 "id":1,
-"saison_id":1,
 "nom":"Brad Pitt",
-"role":"Mr Smith",
 "photoURL":"http://www.google.com/image"
 },
 {
 "id":2,
-"saison_id":2,
 "nom":"Angelina Jolie",
-"role":"Ms Smith",
 "photoURL":"http://www.google.com/image"
 }
 ]

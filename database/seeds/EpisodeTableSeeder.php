@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\V1\Episode;
+use App\Api\V1\Models\Episode;
 
 class EpisodeTableSeeder extends Seeder {
 

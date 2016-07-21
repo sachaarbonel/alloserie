@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Database\Seeder;
-use App\Api\V1\Serie;
+use App\Api\V1\Models\Serie;
 
 
 class SerieTableSeeder extends Seeder {

@@ -11,6 +11,7 @@ class CreatePhotosTable extends Migration {
             $table->increments('id');
             $table->integer('saison_id')->unsigned()->index();
             $table->string('imageURL');
+            $table->string('numero_saison');
         });
 
        

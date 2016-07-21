@@ -2,11 +2,13 @@
 {
 "id":1,
 "saison_id":1,
-"imageURL":"test"
+"imageURL":"test",
+"numero_saison":1
 },
 {
 "id":2,
 "saison_id":2,
-"imageURL":"test"
+"imageURL":"test",
+"numero_saison":2
 }
 ]

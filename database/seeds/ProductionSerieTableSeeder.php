@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Api\V1\ProductionSerie;
+use App\Api\V1\Models\ProductionSerie;
 
 class ProductionSerieTableSeeder extends Seeder {
 

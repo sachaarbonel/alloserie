@@ -110,6 +110,7 @@ return [
 
     'log' => env('APP_LOG', 'single'),
 
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -120,6 +121,7 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+
 
     'providers' => [
 
@@ -158,8 +160,8 @@ return [
         /*
         * API Service Providers...
         */
-         Dingo\Api\Provider\LaravelServiceProvider::class
-
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+        App\Api\V1\Providers\FractalServiceProvider::class
     ],
 
     /*

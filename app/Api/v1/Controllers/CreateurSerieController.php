@@ -5,6 +5,7 @@ namespace App\Api\V1\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Api\V1\Models\CreateurSerie;
 
 class CreateurSerieController extends Controller {
 

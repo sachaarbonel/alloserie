@@ -3,14 +3,12 @@
 "id":1,
 "saison_id":1,
 "synopsis":"Il etait une fois blabla",
-"nom":"Seigneur Des anneaux Tome 1 episode 1",
 "numero":1
 },
 {
 "id":2,
 "saison_id":2,
 "synopsis":"Il etait une fois blabla 2",
-"nom":"Seigneur Des anneaux Tome 2 episode 1",
 "numero":2
 }
 ]

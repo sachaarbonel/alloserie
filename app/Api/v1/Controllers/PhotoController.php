@@ -5,8 +5,25 @@ namespace App\Api\V1\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Api\V1\Models\Photo;
+use App\Api\V1\Models\Saison;
+use App\Api\V1\Transformers\SaisonTransformer;
 
-class PhotoController extends Controller {
+class PhotoController extends BaseController {
+
+
+  /**
+  * Retourne toutes les photos d'une saison
+  */
+  public function getPhotosSaison($id,$numero_saison)
+  {
+    $saison_infos = Saison::where([
+    ['serie_id', '=', $id],
+    ['numero', '=', $numero_saison],
+])->get();
+
+    return $this->response->item($saison_infos, new SaisonTransformer);
+  }
 
   /**
    * Display a listing of the resource.

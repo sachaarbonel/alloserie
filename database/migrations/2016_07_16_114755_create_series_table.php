@@ -14,7 +14,7 @@ class CreateSeriesTable extends Migration {
             $table->integer('nombre_fan');
             $table->string('nationalite');
             $table->string('statut');
-            $table->string('format');
+            $table->integer('format');
             $table->string('synopsis');
             $table->string('miniatureURL');
             $table->string('nom');

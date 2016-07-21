@@ -36,6 +36,9 @@ class DatabaseSeeder extends Seeder {
 		$this->call('ProductionTableSeeder');
 		$this->command->info('Production table seeded!');
 
+		$this->call('ActeurSaisonTableSeeder');
+		$this->command->info('ActeurSaison table seeded!');
+
 		$this->call('CreateurSerieTableSeeder');
 		$this->command->info('CreateurSerie table seeded!');
 
