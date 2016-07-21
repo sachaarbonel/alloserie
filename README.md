@@ -7,7 +7,7 @@ Vous trouverez également dans le depot quelques exmplaires des requêtes que j'
 
 ## Points forts
 - Les "seeders" utilisent des fichiers json pour remplir la base de données, ce qui va faciliter la migration
-- Versioning le dossier /app est organisé de façon à séparer la partie API, de la future partie Web (ex: back-end)
+- Versioning : le dossier /app est organisé de façon à séparer la partie API, de la future partie Web (ex: back-end)
 
 ## Installation 
 via composer 
