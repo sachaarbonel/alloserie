@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Genre;
+use App\Api\V1\Models\Genre;
 
 class GenreTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('genres')->delete();
-
-		// GenreTableSeeder
-		Genre::create(array(
-			));
-	}
+		$json = File::get("database/data/genres.json");
+        $data = json_decode($json,true);
+        Genre::insert($data);
+}
 }

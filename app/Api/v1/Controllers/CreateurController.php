@@ -1,6 +1,18 @@
-<?php namespace App\Http\Controllers;
+<?php 
+namespace App\Api\V1\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Api\V1\Models\Createur;
 
 class CreateurController extends Controller {
+
+
+  public function getSeriesCreateur($id)
+  {
+    return "getSeriesCreateur(".$id.") function";
+  }
 
   /**
    * Display a listing of the resource.

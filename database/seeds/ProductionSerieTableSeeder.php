@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\ProductionSerie;
+use App\Api\V1\Models\ProductionSerie;
 
 class ProductionSerieTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('production_serie')->delete();
-
-		// ProductionSeriePivotTableSeeder
-		ProductionSerie::create(array(
-			));
-	}
+		$json = File::get("database/data/productionsSerie.json");
+        $data = json_decode($json,true);
+        ProductionSerie::insert($data);
+}
 }

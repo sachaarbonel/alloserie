@@ -1,0 +1,20 @@
+[
+{
+"id":1,
+"teaserable_id":1,
+"teaserable_type":"saison",
+"videoURL":"teaser saison 1"
+},
+{
+"id":2,
+"teaserable_id":2,
+"teaserable_type":"episode",
+"videoURL":"teaser episode 1"
+},
+{
+"id":3,
+"teaserable_id":3,
+"teaserable_type":"serie",
+"videoURL":"teaser serie 1"
+}
+]

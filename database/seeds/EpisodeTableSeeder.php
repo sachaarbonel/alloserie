@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Episode;
+use App\Api\V1\Models\Episode;
 
 class EpisodeTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('episodes')->delete();
-
-		// EpisodeTableSeeder
-		Episode::create(array(
-			));
-	}
+		$json = File::get("database/data/episodes.json");
+        $data = json_decode($json,true);
+        Episode::insert($data);
+}
 }

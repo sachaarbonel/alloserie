@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Saison;
+use App\Api\V1\Models\Saison;
 
 class SaisonTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('saisons')->delete();
-
-		// SaisonTableSeeder
-		Saison::create(array(
-			));
-	}
+		$json = File::get("database/data/saisons.json");
+        $data = json_decode($json,true);
+        Saison::insert($data);
+}
 }

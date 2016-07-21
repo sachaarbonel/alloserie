@@ -1,0 +1,12 @@
+[
+{
+"id":1,
+"createur_id":1,
+"serie_id":2
+},
+{
+"id":2,
+"createur_id":2,
+"serie_id":1
+}
+]

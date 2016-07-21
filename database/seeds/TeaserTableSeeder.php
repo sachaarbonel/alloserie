@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Teaser;
+use App\Api\V1\Models\Teaser;
 
 class TeaserTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('teasers')->delete();
-
-		// TeaserTableSeeder
-		Teaser::create(array(
-			));
-	}
+		$json = File::get("database/data/teasers.json");
+        $data = json_decode($json,true);
+        Teaser::insert($data);
+}
 }

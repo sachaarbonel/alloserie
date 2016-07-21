@@ -1,0 +1,41 @@
+[
+{
+"id":1,
+"note_presse":"4,2",
+"note_spectateurs":"4,2",
+"nombre_fan":37000,
+"nationalite":"Americaine",
+"statut":"Terminé",
+"format":45,
+"synopsis":"Il etait une fois blabla",
+"miniatureURL":"lien vers Seigneur Des Anneaux",
+"nom":"Seigneur des anneaux TV",
+"posterURL":"idem"
+},
+{
+"id":2,
+"note_presse":"3,2",
+"note_spectateurs":"3,2",
+"nombre_fan":37000,
+"nationalite":"Anglaise",
+"statut":"En production",
+"format":55,
+"synopsis":"Il etait une fois blabla 2",
+"miniatureURL":"lien vers Star trek",
+"nom":"Star Trek TV",
+"posterURL":"idem 2"
+},
+{
+"id":4,
+"note_presse":"4,2",
+"note_spectateurs":"3,2",
+"nombre_fan":47000,
+"nationalite":"Anglaise",
+"statut":"En production",
+"format":55,
+"synopsis":"Il etait une fois blabla 3",
+"miniatureURL":"lien vers Shrek",
+"nom":"Shrek TV",
+"posterURL":"idem 3"
+}
+]

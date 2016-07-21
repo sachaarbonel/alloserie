@@ -1,0 +1,14 @@
+[
+{
+"id":1,
+"saison_id":1,
+"synopsis":"Il etait une fois blabla",
+"numero":1
+},
+{
+"id":2,
+"saison_id":2,
+"synopsis":"Il etait une fois blabla 2",
+"numero":2
+}
+]

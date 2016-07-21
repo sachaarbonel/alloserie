@@ -1,16 +1,14 @@
 <?php
-
 use Illuminate\Database\Seeder;
-use App\Serie;
+use App\Api\V1\Models\Serie;
+
 
 class SerieTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('series')->delete();
-
-		// SerieTableSeeder
-		Serie::create(array(
-			));
-	}
+		$json = File::get("database/data/series.json");
+        $data = json_decode($json,true);
+        Serie::insert($data);
+}
 }

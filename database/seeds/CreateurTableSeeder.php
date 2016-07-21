@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Createur;
+use App\Api\V1\Models\Createur;
 
 class CreateurTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('createurs')->delete();
-
-		// CreateurTableSeeder
-		Createur::create(array(
-			));
-	}
+		$json = File::get("database/data/createurs.json");
+        $data = json_decode($json,true);
+        Createur::insert($data);
+}
 }

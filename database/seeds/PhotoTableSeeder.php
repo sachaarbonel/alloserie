@@ -1,16 +1,15 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Photo;
+use App\Api\V1\Models\Photo;
 
 class PhotoTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('photos')->delete();
-
-		// PhotoTableSeeder
-		Photo::create(array(
-			));
-	}
+		
+		$json = File::get("database/data/photos.json");
+        $data = json_decode($json,true);
+        Photo::insert($data);
+}
 }

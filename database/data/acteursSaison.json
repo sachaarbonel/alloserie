@@ -1,0 +1,14 @@
+[
+{
+"id":1,
+"acteur_id":1,
+"saison_id":1,
+"role":"Mr Smith"
+},
+{
+"id":2,
+"acteur_id":2,
+"saison_id":2,
+"role":"Mrs Smith"
+}
+]

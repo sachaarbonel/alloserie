@@ -1,16 +1,14 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Production;
+use App\Api\V1\Models\Production;
 
 class ProductionTableSeeder extends Seeder {
 
 	public function run()
 	{
-		//DB::table('productions')->delete();
-
-		// ProductionTableSeeder
-		Production::create(array(
-			));
-	}
+		$json = File::get("database/data/productions.json");
+        $data = json_decode($json,true);
+        Production::insert($data);
+}
 }
