@@ -28,4 +28,5 @@ directement essayez celle ci "http://localhost:8000/api/v1/series/list" avec Pos
 - Ajouter la gestion d'erreurs dans les controllers
 - Creer un back-end en Angular2, le front-end de l'appli et une version mobile en Ionic, ... des évolutions du projet qui consumeront cette API en clair.
 - Sécurisation par token
+- Tests unitaires
 
