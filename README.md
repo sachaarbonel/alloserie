@@ -1,6 +1,6 @@
 # Alloserie Project
 
-Le but de ce projet a eu pour but de maîtriser le framework PHP Laravel à travers le développement d'une API REST inspirée de allociné pour les séries. Vous pourrez trouver le schéma de la BDD ici : http://www.laravelsd.com/share/lC4YaN
+Ce projet a eu pour but de maîtriser le framework PHP Laravel à travers le développement d'une API REST inspirée de allociné pour les séries. Vous pourrez trouver le schéma de la BDD ici : http://www.laravelsd.com/share/lC4YaN
 Les outils tiers utilisés sont le package Dingo : https://github.com/dingo/api 
 Et la plateforme : https://www.import.io/ pour le "scrapping" des données du site http://www.allocine.fr/series/
 Vous trouverez également dans le depot quelques exmplaires des requêtes que j'ai effectué sur l'API d'import.io afin d'extraire les données. Les données extraites sont au format json.
